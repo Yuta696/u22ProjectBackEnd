@@ -116,5 +116,20 @@ DBに更新したい項目を指定
       ];
 ```
 
+Modelを操作するためTinkerを利用します
+
+```
+  php artisan tinker
+```
+
+例えば、以下のコマンドを実行したら、Dbにデータをinsertします。
+
+```
+  >>> App\Models\User::create(['name'=> 'Summer', 'email'=>'summer@example.com','password'=>bcrypt('password')])
+  
+```
+
+
+
 
 
